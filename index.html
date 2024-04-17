@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btnPopup">
+        <p class="ler_mais">Abrir</p>
+    </button>
+
+    <div class="popup_container">
+        <div class="popup">
+            <div class="headerPopup">
+                <h3>Perna Longa</h3>
+                <button class="popup-close" id="popup-close">x</button>
+            </div>
+            <hr>
+            <div class="contentPopup">
+                <img src="foto.jpg" alt="">
+                <p id="modal-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum blanditiis, veniam, odio ipsam temporibus architecto sapiente at tenetur vitae cupiditate repudiandae enim culpa? Dolorem voluptatum enim quod error, similique saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos accusamus nemo laudantium odit pariatur consequatur vel dignissimos repellat perferendis et impedit quasi, enim illum, eius ipsum explicabo quis. Exercitationem, modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe facilis distinctio aspernatur ipsum consequatur? Ea harum in facilis quis deserunt porro aut consequuntur perferendis repellendus officia. Sit nostrum natus porro. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos officiis itaque non sapiente voluptas laudantium modi quasi? Cumque iusto numquam vitae? Sint fugiat velit, aperiam provident atque dolores voluptatum dicta. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi dolore quidem, quas ex quasi vel facilis laboriosam voluptatibus voluptatum, rem facere explicabo velit quis? Maxime repudiandae laborum obcaecati voluptatem soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fuga possimus nesciunt a commodi in tempora? Debitis, quia dolor ullam quos earum voluptatum aut corporis? Placeat nobis cupiditate quod id?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        // Seleciona o botão
+        const botaoMostrar = document.getElementById('btnPopup');
+        // Seleciona o card
+        const card = document.querySelector('.popup_container');
+        // Seleciona o botão dentro do card
+        const botaoFechar = document.getElementById('popup-close');
+
+        // Adiciona um evento de clique ao botão
+        botaoMostrar.addEventListener('click', function() {
+        // Adiciona a classe 'show' ao card
+            card.classList.add('show');
+        });
+        
+        botaoFechar.addEventListener('click', function() {
+            card.classList.remove('show');
+        });
+
+    </script>
+</body>
+</html>
